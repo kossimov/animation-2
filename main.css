@@ -1,0 +1,37 @@
+.car__wrapper {
+  background-image: url(./images/road.avif);
+  background-size: cover;
+  background-position-y: calc(50% + 190px);
+}
+
+.car1 {
+  margin-bottom: 10px;
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/car.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: car 7s ease-in infinite;
+}
+
+.car2 {
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/car.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: car 7s ease-in infinite;
+}
+
+@keyframes car {
+  0% {
+    transform: translateX(1px);
+    transform-origin: left;
+  }
+
+
+  100% {
+    transform: translateX(1500px);
+  }
+}
+
